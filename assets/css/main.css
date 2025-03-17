@@ -2832,6 +2832,12 @@ footer.major > :last-child {
 	}
 }
 
+.spotlights section .content {
+	-ms-flex: 1;
+	margin: 0 0 0 4em;
+	width: 65%;
+}
+
 .spotlights section .content > :last-child {
 	margin-bottom: 0;
 }
@@ -4035,7 +4041,13 @@ body.is-preload #banner .inner .actions {
 
 @media screen and (max-width: 1280px) {
 	#footer {
-		background: #303639;
+		/* background: #303639; */
+		background-image: linear-gradient(
+				to top,
+				rgba(0, 0, 0, 0.75),
+				rgba(0, 0, 0, 75)
+			),
+			url(../../images/banner.jpg);
 	}
 
 	#footer > .inner {
@@ -4345,17 +4357,21 @@ blockquote {
 
 .profilepic img {
 	object-fit: cover;
+	object-position: 0 10%;
+	/* border: rgba(144, 144, 144, 1) solid 1px; */
+
+	/* border: #db6172 solid 1px; */
 	width: 100%;
 	border-radius: 4px;
 	overflow: hidden;
 	aspect-ratio: 1/1;
-	scale: 2;
+	/* padding: 1px; */
 }
 
 .profilepic {
 	height: 100%;
 	overflow: hidden;
-	max-height: 350px;
+	/* max-height: 350px; */
 }
 
 .profilepic img {
