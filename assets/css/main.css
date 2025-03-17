@@ -4225,6 +4225,12 @@ body.is-preload #banner .inner .actions {
 	gap: 1rem;
 }
 
+@media screen and (max-width: 980px) {
+	.circleswrapper {
+		width: 75% !important;
+	}
+}
+
 .circlescontainer {
 	display: flex;
 	justify-content: center;
