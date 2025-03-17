@@ -2826,10 +2826,10 @@ footer.major > :last-child {
 	object-position: center;
 }
 
-.spotlights section .content {
-	-ms-flex: 1;
-	margin: 0 0 0 4em;
-	width: 65%;
+@media screen and (max-width: 736px) {
+	.spotlights section .image img {
+		height: 300px;
+	}
 }
 
 .spotlights section .content > :last-child {
