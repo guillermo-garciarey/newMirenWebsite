@@ -4288,24 +4288,54 @@ body.is-preload #banner .inner .actions {
 .testimonial-tabs {
 	width: 100%;
 	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 5em;
 }
 .tab-buttons {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 15px;
 	align-items: center;
-	flex-direction: column;
-	gap: 1em;
-	flex-wrap: wrap;
+	flex-direction: row;
+	/* gap: 1em; */
+	justify-self: center;
+	/* justify-content: space-between; */
+	width: 100%;
 }
 
-/* .tab-button {
-	border: none;
-	color: white;
-	cursor: pointer;
-	margin: 0 5px;
-	border-radius: 4px;
-} */
+@media screen and (max-width: 1280px) {
+	.tab-buttons {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-self: center;
+		text-align: center;
+
+		border-radius: none !important;
+	}
+
+	.tab-button {
+		display: flex !important;
+	}
+
+	.testimonial-tabs {
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 5em;
+		align-items: center;
+	}
+
+	.tab-button.active {
+		/* background-color: #db6171; */
+		text-decoration-color: #db6171 !important;
+		text-decoration: none !important;
+		text-decoration-thickness: 2px;
+		text-underline-offset: 0em;
+		color: #db6171 !important;
+	}
+}
 
 .tab-button {
 	-moz-appearance: none;
@@ -4325,19 +4355,27 @@ body.is-preload #banner .inner .actions {
 	height: 4.1em;
 	letter-spacing: 0.25em;
 	line-height: 4.25em;
-
-	text-align: center;
+	text-align: justify;
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
-	width: 80%;
+	width: 100%;
+	box-shadow: none !important;
+}
+
+.tab-button:hover {
+	background-color: transparent;
 }
 
 .tab-button.active {
-	box-shadow: none;
-	background-color: #db6172;
-	color: #ffffff !important;
+	/* background-color: #db6171; */
+	/* text-decoration-color: #db6171 !important;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 1em; */
+	color: #db6171 !important;
 }
+
 .tab-panel {
 	display: none;
 }
@@ -4351,6 +4389,24 @@ blockquote {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	max-width: 100%;
+}
+
+.tab-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left: 1em;
+	/* margin-top: 0.5em; */
+	padding-top: 2em;
+	/* border-left: 1px solid rgba(144, 144, 144, 0.2) !important; */
+	border-top: 1px solid rgba(144, 144, 144, 0.2) !important;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 /* Profile */
@@ -4379,6 +4435,13 @@ blockquote {
 	height: auto;
 	object-fit: cover;
 	object-position: center;
+}
+
+.servicespic {
+	max-height: 300px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 4px;
 }
 
 /* Color */
