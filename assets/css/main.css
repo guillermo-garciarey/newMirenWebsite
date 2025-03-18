@@ -391,7 +391,6 @@ textarea {
 
 a {
 	color: var(--green1);
-	color: ;
 }
 
 strong,
@@ -4259,11 +4258,53 @@ body.is-preload #banner .inner .actions {
 	width: 100%;
 }
 
-.circle {
+.circle:nth-child(1) {
+	background-image: url("../../images/circle1.jpg");
+	border: none;
+}
+
+.circle:nth-child(2) {
+	background-image: url("");
+}
+
+.circle:nth-child(3) {
+	background-image: url("../../images/circle2.jpg");
+	border: none;
+}
+
+.circle:nth-child(4) {
+	background-image: url("");
+}
+
+/* Circles 2 */
+
+.circle2:nth-child(1) {
+	background-image: url("");
+}
+
+.circle2:nth-child(2) {
+	background-image: url("../../images/circle3.jpg");
+	border: none;
+}
+
+.circle2:nth-child(3) {
+	background-image: url("");
+}
+
+.circle2:nth-child(4) {
+	background-image: url("../../images/circle4.jpg");
+	border: none;
+}
+
+.circle,
+.circle2 {
 	width: 22.5%; /* Ensures each takes up equal space */
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
 
 	aspect-ratio: 1/1;
-	border-radius: 50%;
+	border-radius: 4px;
 	object-fit: cover;
 	object-position: center;
 	border: rgba(144, 144, 144, 0.2) solid 1px;
