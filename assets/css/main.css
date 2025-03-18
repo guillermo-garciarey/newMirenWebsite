@@ -4641,9 +4641,9 @@ body {
 .social-bar {
 	display: flex;
 	border-radius: 10px;
-	background: #fff;
+	/* background: #fff;
 	box-shadow: 0 0 60px rgba(93, 70, 232, 0.15);
-	border: 1px solid#ebe9e9;
+	border: 1px solid#ebe9e9; */
 }
 .iconpad {
 	/* padding: 12px 0; */
