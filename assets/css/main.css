@@ -1,9 +1,27 @@
 @import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
 :root {
-	--green1: #5c7354; /* Default */
-	--green2: #8a9a5b; /* Hover */
-	--green3: #a7c4a0; /* Active */
+}
+
+:root {
+	--green1: #8a9a5b; /* Default */
+	--green2: #a7c4a0; /* Hover */
+	--green3: #5c7354; /* Active */
+	/* --green1: #5c7354; 
+	--green2: #8a9a5b; 
+	--green3: #a7c4a0;  */
+	--font-playfair: "Playfair Display", serif;
+	--font-lora: "Lora", serif;
+}
+
+.h1-playfair {
+	font-family: var(--font-playfair);
+}
+
+.h1-lora {
+	font-family: var(--font-lora);
 }
 
 html,
@@ -210,7 +228,8 @@ body,
 input,
 select,
 textarea {
-	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: var(--font-playfair);
 	font-size: 14pt;
 	font-weight: normal;
 	line-height: 1.65;
@@ -4598,7 +4617,8 @@ blockquote {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Montserrat Alternates", sans-serif;
+	/* font-family: "Montserrat Alternates", sans-serif; */
+	font-family: var(--font-playfair);
 }
 * {
 	padding: 0;
@@ -5021,5 +5041,5 @@ body {
 }
 
 .me {
-	color: var(--green2) !important;
+	color: var(--green1) !important;
 }

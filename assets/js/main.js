@@ -4,28 +4,6 @@
 	License: pixelarity.com/license
 */
 
-document
-	.getElementById("contactForm")
-	.addEventListener("submit", function (event) {
-		event.preventDefault(); // Prevent the default form submission
-
-		// Get form values
-		let name = document.getElementById("demo-name").value;
-		let email = document.getElementById("demo-email").value;
-		let message = document.getElementById("demo-message").value;
-
-		// Construct the mailto link
-		let subject = encodeURIComponent("Consultation");
-		let body = encodeURIComponent(
-			`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-		);
-
-		let mailtoLink = `mailto:realmepsychotherapy@gmail.com?subject=${subject}&body=${body}`;
-
-		// Open the default email client
-		window.location.href = mailtoLink;
-	});
-
 (function ($) {
 	var $window = $(window),
 		$body = $("body"),
