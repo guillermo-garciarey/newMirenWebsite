@@ -4956,7 +4956,7 @@ body {
 	gap: 0.8em;
 }
 
-.iconsbulleted h3 {
+.iconsbulleted h4 {
 	position: relative;
 	text-transform: uppercase;
 	margin: 0;
@@ -4984,6 +4984,13 @@ body {
 
 .phone-title ul {
 	margin-bottom: 1em;
+}
+
+.email a {
+	text-decoration: underline dotted;
+	text-decoration-thickness: 2px; /* Adjust thickness */
+	text-underline-offset: 2px; /* Adjust spacing */
+	color: var(--green1); /* Set text color */
 }
 
 /* Specific icons */
