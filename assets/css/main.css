@@ -4677,11 +4677,11 @@ body {
 	font-size: 22px;
 }
 
-a {
+/* a {
 	text-decoration: none !important;
 	color: #3f345f;
 	transition: all 0.3s ease 0s;
-}
+} */
 
 .slider-nav-item:before {
 	position: absolute;
@@ -4919,101 +4919,90 @@ a {
 	color: #40beff;
 }
 
-/* Social Icons Again */
+/* Contacts */
 
-.socialwrapper {
+.contactbox {
 	display: flex;
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 1.5em;
 	justify-content: center;
-	width: 100%;
-	gap: 1em;
+	gap: 5em;
+}
+
+.iconsbulleted {
+	display: flex;
+	gap: 5em;
+
+	justify-content: right;
+}
+
+.iconsbulleted ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.iconsbulleted li {
+	display: flex;
+	flex-direction: column;
+
+	gap: 0.8em;
+}
+
+.iconsbulleted h3 {
+	position: relative;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.iconsbulleted p {
+	margin: 0;
+}
+
+/* Icon placement */
+.address-title::before,
+.phone-title::before,
+.email-title::before {
+	content: ""; /* Placeholder */
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 1em;
+	display: inline-block;
+	width: 1.5em; /* Adjust width to align icons */
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: -2em;
+}
+
+.phone-title ul {
+	margin-bottom: 1em;
+}
+
+/* Specific icons */
+.address-title::before {
+	content: "\f3c5"; /* fa-map-marker-alt */
+}
+
+.phone-title::before {
+	content: "\f095"; /* fa-phone */
+}
+
+.email-title::before {
+	content: "\f0e0"; /* fa-envelope */
+}
+
+#contactForm {
+	/* padding-right: 5em; */
 }
 
 @media screen and (max-width: 1280px) {
-	.socialwrapper {
-		display: flex;
-		flex-direction: column;
-		position: relative;
-		overflow: hidden;
-		padding-bottom: 1.5em;
-		align-items: center;
-		width: 100%;
-		gap: 0.5em;
+	.iconsbulleted {
+		justify-content: center;
 	}
-}
 
-.socialwrapper .socialbutton {
-	display: inline-block;
-	height: 60px;
-	width: 60px;
-	float: left;
-	text-decoration: none;
-	margin: 0 5px;
-	overflow: hidden;
-	background: #fff;
-	border-radius: 50px;
-	cursor: pointer;
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s ease-out;
-}
-.socialwrapper .socialbutton:hover {
-	width: 200px;
-}
-.socialwrapper .socialbutton .icon {
-	display: inline-block;
-	height: 60px;
-	width: 60px;
-	color: #000;
-	text-align: center;
-	border-radius: 50px;
-	box-sizing: border-box;
-	line-height: 60px;
-	transition: all 0.3s ease-out;
-}
-.socialwrapper .socialbutton:nth-child(1):hover .icon {
-	background: #4267b2;
-}
-.socialwrapper .socialbutton:nth-child(2):hover .icon {
-	background: #1da1f2;
-}
-.socialwrapper .socialbutton:nth-child(3):hover .icon {
-	background: #e1306c;
-}
-.socialwrapper .socialbutton:nth-child(4):hover .icon {
-	background: #333;
-}
-.socialwrapper .socialbutton:nth-child(5):hover .icon {
-	background: #ff0000;
-}
-.socialwrapper .socialbutton .icon i {
-	font-size: 25px;
-	line-height: 60px;
-	transition: all 0.3s ease-out;
-}
-.socialwrapper .socialbutton:hover .icon i {
-	color: #fff;
-}
-.socialwrapper .socialbutton span {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 60px;
-	margin-left: 10px;
-	transition: all 0.3s ease-out;
-}
-.socialwrapper .socialbutton:nth-child(1) span {
-	color: #4267b2;
-}
-.socialwrapper .socialbutton:nth-child(2) span {
-	color: #1da1f2;
-}
-.socialwrapper .socialbutton:nth-child(3) span {
-	color: #e1306c;
-}
-.socialwrapper .socialbutton:nth-child(4) span {
-	color: #333;
-}
-.socialwrapper .socialbutton:nth-child(5) span {
-	color: #ff0000;
+	.contactbox {
+		flex-direction: column-reverse;
+	}
 }
