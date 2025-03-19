@@ -6,9 +6,9 @@
 }
 
 :root {
-	--green1: #8a9a5b; /* Default */
-	--green2: #a7c4a0; /* Hover */
-	--green3: #5c7354; /* Active */
+	--green1: #8a9a5b;
+	--green2: #a7c4a0;
+	--green3: #5c7354;
 	/* --green1: #5c7354; 
 	--green2: #8a9a5b; 
 	--green3: #a7c4a0;  */
@@ -3678,9 +3678,9 @@ body {
 }
 
 #banner .inner h2 {
-	font-size: 2.75em;
+	font-size: 4.25em;
 	margin-bottom: 0;
-	margin-top: -0.25em;
+	margin-top: -0.5em;
 	line-height: 1.3;
 }
 
@@ -3765,7 +3765,7 @@ body {
 	}
 
 	#banner .inner h2 {
-		font-size: 1.75em;
+		font-size: 3.25em;
 	}
 
 	#banner .inner p {
@@ -5042,4 +5042,8 @@ body {
 
 .me {
 	color: var(--green1) !important;
+}
+
+.ctabutton {
+	font-weight: bolder;
 }
