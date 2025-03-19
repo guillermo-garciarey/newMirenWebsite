@@ -4606,6 +4606,9 @@ body {
 }
 
 .height450 {
+	margin-top: 1.5em;
+	box-shadow: 0 0 30px rgba(93, 70, 232, 0.15);
+	border-radius: 4px;
 }
 
 .badge-info {
@@ -4909,14 +4912,17 @@ body {
 
 .WA {
 	color: #25d366;
+	color: var(--green1);
 }
 
 .gmail {
 	color: #d14836;
+	color: var(--green1);
 }
 
 .phone {
 	color: #40beff;
+	color: var(--green1);
 }
 
 /* Contacts */
