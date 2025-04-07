@@ -21,9 +21,9 @@
 }
 
 .dark_theme:root {
-	--background2: #0f2222;
 	--background1: #2c3a39;
-	--borderbottom: #2c2c2c;
+	--background2: #0f2222;
+	--borderbottom: #2c3a39;
 	--text: #cecece;
 	--headings: #eaeaea;
 }
@@ -426,7 +426,7 @@ a {
 
 strong,
 b {
-	color: var(--headings);
+	color: #707070;
 }
 
 h1,
@@ -2292,6 +2292,7 @@ input[type="radio"] + label:before {
 
 label {
 	color: #707070;
+	color: var(--text);
 }
 
 input[type="text"],
@@ -4144,7 +4145,8 @@ body.is-preload #banner .inner .actions {
 
 #main {
 	background: #ffffff;
-	border-bottom: solid 1px #eaeaea;
+	background: var(--background1);
+	border-bottom: solid 1px var(--borderbottom);
 }
 
 #main > header {

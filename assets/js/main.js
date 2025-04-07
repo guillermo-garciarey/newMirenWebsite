@@ -61,7 +61,35 @@
 		});
 })(jQuery);
 
-document.getElementById("toggle-theme").addEventListener("click", function (e) {
-	e.preventDefault();
-	document.documentElement.classList.toggle("dark_theme");
+// document.getElementById("toggle-theme").addEventListener("click", function (e) {
+// 	e.preventDefault();
+// 	document.documentElement.classList.toggle("dark_theme");
+// });
+
+const toggleBtn = document.getElementById("themeToggle");
+const icon = document.getElementById("themeIcon");
+
+// Load theme preference on page load
+if (localStorage.getItem("theme") === "dark") {
+	document.documentElement.classList.add("dark_theme");
+	icon.classList.remove("fa-moon");
+	icon.classList.add("fa-sun");
+}
+
+// Toggle theme on click
+toggleBtn.addEventListener("click", (e) => {
+	e.preventDefault(); // prevent link from jumping
+
+	const isDark = document.documentElement.classList.toggle("dark_theme");
+
+	// Toggle icon
+	if (isDark) {
+		icon.classList.remove("fa-moon");
+		icon.classList.add("fa-sun");
+		localStorage.setItem("theme", "dark");
+	} else {
+		icon.classList.remove("fa-sun");
+		icon.classList.add("fa-moon");
+		localStorage.setItem("theme", "light");
+	}
 });
