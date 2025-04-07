@@ -427,6 +427,7 @@ a {
 strong,
 b {
 	color: #707070;
+	color: var(--headings);
 }
 
 h1,
@@ -4454,7 +4455,7 @@ body.is-preload #banner .inner .actions {
 	text-decoration: underline;
 	text-decoration-thickness: 2px;
 	text-underline-offset: 1em; */
-	color: var(--green2) !important;
+	color: var(--green1) !important;
 }
 
 .tab-panel {
