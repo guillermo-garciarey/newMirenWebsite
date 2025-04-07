@@ -60,3 +60,8 @@
 			side: "right",
 		});
 })(jQuery);
+
+document.getElementById("toggle-theme").addEventListener("click", function (e) {
+	e.preventDefault();
+	document.documentElement.classList.toggle("dark_theme");
+});
