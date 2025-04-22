@@ -93,3 +93,28 @@ toggleBtn.addEventListener("click", (e) => {
 		localStorage.setItem("theme", "light");
 	}
 });
+
+const header2 = document.getElementById("header");
+
+// Try to get #title or #banner (whichever exists)
+const target =
+	document.getElementById("title") || document.getElementById("banner");
+
+if (target) {
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (!entry.isIntersecting) {
+					header2.classList.add("visible");
+				} else {
+					header2.classList.remove("visible");
+				}
+			});
+		},
+		{
+			threshold: 0,
+		}
+	);
+
+	observer.observe(target);
+}

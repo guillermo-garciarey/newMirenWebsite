@@ -3206,6 +3206,7 @@ body {
 
 #header {
 	background-color: var(--background1);
+	background-color: transparent;
 	border-bottom: solid 1px rgba(144, 144, 144, 0.2);
 	cursor: default;
 	height: 3.25em;
@@ -3220,6 +3221,7 @@ body {
 
 #header > h1 {
 	color: var(--headings);
+	color: #ffffff;
 	display: inline-block;
 	height: inherit;
 	left: 1.25em;
@@ -5081,4 +5083,21 @@ body {
 
 .legal:nth-child(2) {
 	background-position: bottom !important;
+}
+
+.visible {
+	background-color: var(--background1) !important;
+	color: var(--text);
+}
+
+.visible h1 {
+	color: var(--headings) !important;
+}
+
+#header a {
+	color: white;
+}
+
+#header.visible a {
+	color: var(--headings);
 }
